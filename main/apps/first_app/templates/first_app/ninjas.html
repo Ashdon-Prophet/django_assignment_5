@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <title>Index</title>
+        <style>
+            *{
+                padding: 0px;
+                margin: 0px;
+                outline: 1px dotted grey;
+            }
+            #ct{
+                padding: 1.25em;
+                margin: 1.25em auto;
+                width: 90%;
+                height: auto;
+                outline: 1px dotted grey;
+            }
+        </style>
+        <script type="text/javascript">
+
+        </script>
+    </head>
+    <body>
+        <div id="ct">
+            {% if request.session.ninjas == ninjas %}
+                    <p><img src="{{ http://vignette3.wikia.nocookie.net/fictionalcrossover/images/0/03/TMNT.jpg/revision/latest?cb=20131107221430 }}" width="75%"></p>
+            {% endif %}
+            {% if request.session.ninjas == blue %}
+                <p><img src="{{ https://www.decalsextremeonline.com/assets/images/teenage_mutant_ninja_turtlesblueone.jpg }}" width="75%"></p>
+            {% endif %}
+            {% if request.session.ninjas == orange %}
+                <p><img src="{{ http://kilencedik.hu/galeria/gal/Blog/Blog/mike_06.jpg }}" width="75%"></p>
+            {% endif %}
+            {% if request.session.ninjas == red %}
+                <p><img src="{{ http://studentsites.woodlandschools.org/ruffr/webdesign1/practice/ninjaturtles/raphael1.jpg }}" width="75%"></p>
+            {% endif %}
+            {% if request.session.ninjas == purple %}
+                <p><img src="{{ https://www.decalsextremeonline.com/assets/images/teenage_mutant_ninja_turtlespurpleone.jpg }}" width="75%"></p>
+            {% endif %}
+            {% if request.session.ninjas == fox %}
+                <p><img src="{{ http://2.cdn.eprofits.com/--QvW91O6WKEsX5VMLreu_RpoWVHM7P4pRs1u1DcmRJO8iZ5JxFggFKBbxQUjKczMtaOFVWQ9SpEkrseGB0Gfg/megan-fox-is-teenage-mutant-ninja-turtles-newest-hottie-companion-1.png }}" width="75%"></p>
+            {% endif %}
+        </div>
+    </body>
+</html>
